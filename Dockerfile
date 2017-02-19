@@ -10,4 +10,4 @@ RUN pip3 install nameko pymongo pytest ; \
 	cd ./nameko-mongodb ; \
 	python3 setup.py install
 
-ENTRYPOINT ["nameko","run"]
+ENTRYPOINT ["nameko","run","--config","cluster.yml"]
