@@ -1,8 +1,4 @@
-FROM debian:jessie
-
-RUN apt-get update ; \
-	apt-get install -y python3 python3-pip git ; \
-	pip3 install pip --upgrade ;
+FROM python:3
 
 RUN pip3 install nameko pymongo pytest ; \
 	cd /tmp ; \
